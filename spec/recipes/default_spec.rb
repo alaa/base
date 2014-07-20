@@ -15,4 +15,8 @@ describe 'base::default' do
       expect(subject).to install_package pkg
     end
   end
+
+  it "should include ntp::default recipe" do
+    expect(subject).to include_recipe 'ntp::default'
+  end
 end
