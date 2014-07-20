@@ -8,7 +8,7 @@
 #
 
 include_recipe "apt::default"
-include_recipe "os-hardening::default"
+#include_recipe "os-hardening::default"
 include_recipe "ntp::default"
 
 node['base']['packages'].each do |pkg|
