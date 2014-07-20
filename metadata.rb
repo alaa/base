@@ -1,5 +1,5 @@
 name             'base'
-maintainer       'Alaa Qutasih'
+maintainer       'Alaa Qutaish'
 maintainer_email 'alaa.qutaish@gmail.com'
 license          'All rights reserved'
 description      'Installs/Configures base'
