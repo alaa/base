@@ -1,4 +1,4 @@
-case node["platform"]
+case node['platform_family']
 when "debian", "ubuntu"
   default['base']['packages'] = %w(gettext make gcc libssl-dev curl libicu-dev
                                    libyaml-dev zlib1g-dev libreadline-dev autoconf 
