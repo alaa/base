@@ -9,3 +9,6 @@ when "debian", "ubuntu"
 when "redhat", "centos", "fedora"
   default['base']['packages'] = %w()
 end
+
+default['rvm']['default_ruby']      = "ruby-2.1.1"
+default['rvm']['rubies']            = ["ruby-2.1.1"]
