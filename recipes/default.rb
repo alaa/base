@@ -8,6 +8,10 @@
 #
 
 include_recipe "ntp::default"
+include_recipe "rbenv::default"
+include_recipe "rbenv::ruby_build"
+
+rbenv_ruby "2.1.1"
 
 node['base']['packages'].each do |pkg|
   package pkg do
