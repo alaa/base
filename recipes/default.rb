@@ -7,6 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
+include_recipe 'apt::default'
 include_recipe "ntp::default"
 include_recipe "rvm::system"
 
