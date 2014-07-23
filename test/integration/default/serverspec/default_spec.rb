@@ -5,7 +5,7 @@ include Serverspec::Helper::DetectOS
 
 RSpec.configure do |c|
   c.before :all do
-    c.path = "/usr/local/rvm/gems/ruby-2.1.1/bin:/usr/local/rvm/gems/ruby-2.1.1@global/bin:/usr/local/rvm/rubies/ruby-2.1.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/rvm/bin"
+    c.path = "/usr/local/rvm/wrappers/default:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/rvm/bin"
   end
 end
 
@@ -32,5 +32,5 @@ describe service('ntp') do
 end
 
 describe command("ruby --version") do
-  it { should return_stdout /ruby 2.1.1/ }
+  it { should return_stdout /ruby 2.1.2/ }
 end

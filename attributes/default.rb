@@ -8,7 +8,7 @@ when "debian", "ubuntu"
                                    openssl libv8-dev bison libxml2-dev apache2-utils)
 when "redhat", "centos", "fedora"
   default['base']['packages'] = %w()
-end
+  end
 
-default['rvm']['default_ruby']      = "ruby-2.1.1"
-default['rvm']['rubies']            = ["ruby-2.1.1"]
+default['rvm']['default_ruby']  = "ruby-2.1.2"
+default['rvm']['rubies']        = ["ruby-2.1.2"]
